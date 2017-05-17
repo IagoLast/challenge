@@ -29,8 +29,7 @@ export default class Checkout {
     // Get the total cost of a product in the cart
     _computeParcial(productName) {
         const amount = this.cart[productName];
-        const price = this.pricingRules[productName].price;
-        const getCost = this.pricingRules[productName].getCost;
+        const {price, getCost} = this.pricingRules[productName];
         return getCost(amount, price);
     }
 }
