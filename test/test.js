@@ -1,8 +1,8 @@
 /* eslint-env mocha */
 import { expect } from 'chai';
 
-import Checkout from './Checkout.js';
-import pricingRules from './PricingRules.js';
+import Checkout from '../src/Checkout.js';
+import pricingRules from '../src/PricingRules.js';
 
 describe('Checkout', () => {
     let co;
